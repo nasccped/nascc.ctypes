@@ -43,7 +43,7 @@ void vector_deinit(Vec *v) {
   v->items = NULL;
 }
 
-size_t vector_init(Vec *v, usize item_size) {
+usize vector_init(Vec *v, usize item_size) {
   void **items;
 
   // invalid params
